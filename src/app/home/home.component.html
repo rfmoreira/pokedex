@@ -1,0 +1,12 @@
+<div>
+  <h1>Pokemons</h1>
+  <hr/>
+</div>
+<div fxLayout="row wrap" fxLayoutAlign="space-around center" >
+  <div fxFlex="25%" fxFlex.lt-md="33%" fxFlex.lt-sm="50%" *ngFor="let pokemon of pokemons; index as i">
+    <h1 align="center" [routerLink]="'/pokemon/'+pokemon.name">
+      <img alt="pokemon" height="200px" width="200px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{i+1}}.png"/>
+      {{pokemon.name}}
+    </h1>
+  </div>
+</div>
