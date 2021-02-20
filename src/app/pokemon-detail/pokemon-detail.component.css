@@ -1,0 +1,123 @@
+.tittle{
+  font-family: "Arial Black";
+  text-transform: capitalize;
+  font-size: 21px;
+  width: auto;
+  color: white;
+  text-shadow: 3px 0 black, 3px 0 black;
+  text-align: initial;
+}
+
+.tittleDetails{
+  margin-left: 10px;
+  margin-right: auto;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: mediumpurple;
+}
+.tittleDetails img{
+  object-fit: cover;
+  height: auto;
+  width: 200px;
+  margin: 8px;
+  padding: 0;
+ }
+
+#imgP{
+  display: block;
+  object-fit: cover;
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.details{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.detalhes{
+  padding: 10px;
+}
+
+.bodyDetails{
+  height: 100%;
+  width: 60%;
+  background: deepskyblue;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.tipo{
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -icab-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid black;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  margin: auto 4px;
+  margin-left: 0;
+}
+
+.normal{
+  background-color: darkgrey;
+}
+.fire{
+  background-color: orange;
+}
+.fighting{
+  background-color: red;
+}
+.water{
+  background-color: lightskyblue;
+}
+.flying{
+  background-color: mediumpurple;
+}
+.grass{
+  background-color: green;
+}
+.poison{
+  background-color: rebeccapurple;
+}
+.eletric{
+  background-color: yellow;
+}
+.gound{
+  background-color: darkgoldenrod;
+}
+.psychic{
+  background-color: hotpink;
+}
+.rock{
+  background-color: saddlebrown;
+}
+.ice{
+  background-color: cyan;
+}
+.bug{
+  background-color: darkolivegreen;
+}
+.dragon{
+  background-color: purple;
+}
+.ghost{
+  background-color: #705898;
+}
+.steel{
+ background-color: silver;
+}
+.fairy{
+  background-color: lightpink;
+}
+

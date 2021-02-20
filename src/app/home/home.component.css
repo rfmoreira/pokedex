@@ -1,0 +1,39 @@
+.card{
+  margin-right: 0 !important;
+}
+.example-card {
+  display: inline-block;
+  max-width: 400px;
+  background-color: mediumpurple;
+  margin: 20px auto;
+}
+.search-bar{
+  background: white;
+  padding: 0 8px;
+}
+.form-search{
+  width: 200px;
+  margin-left: 20px;
+}
+.example-full-width{
+  width: 240px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.tittle {
+  text-align: center;
+  font-family: "Arial Black";
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.button-type{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: darkred;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0;
+}

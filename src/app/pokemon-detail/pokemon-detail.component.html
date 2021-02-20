@@ -1,2 +1,18 @@
-
-<h1>{{pokemon["name"]}}</h1>
+<hr>
+<div fxLayoutAlign="center center" *ngIf="pokemon != null">
+  <div class="bodyDetails" fxLayout="raw" >
+    <div class="tittleDetails" fxLayout="column" fxLayoutAlign="top">
+      <span class="tittle" fxLayoutAlign="center">{{pokemon?.name}}</span>
+      <div fxFlex="" fxLayout="column" fxLayoutAlign="center center">
+        <img [src]="pokemon?.sprites.other.dream_world.front_default">
+      </div>
+    </div>
+    <div class="detalhes" fxFlex="">
+      <p class="details" for="pokemon">Experiencia Base: {{pokemon['base_experience']}}</p>
+      <p class="details" for="pokemon">Altura: {{pokemon['height'] / 10 |number:'1.1-1'}} m</p>
+      <div fxLayout="row" fxLayoutAlign="start center" >
+        <button *ngFor="let tipo of pokemonTypes" [ngClass]="tipo" class="tipo">{{tipo}}</button>
+      </div>
+    </div>
+  </div>
+</div>

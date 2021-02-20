@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body{
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat, repeat;
+  background-image: url("assets/Poke_Ball_icon.svg"), url("src/assets/background-page.jpg");
+  height: 127px;
+  background-blend-mode: soft-light;
+}

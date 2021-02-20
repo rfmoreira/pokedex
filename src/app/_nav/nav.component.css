@@ -1,0 +1,12 @@
+.navbar{
+  margin: 0;
+  padding: 0;
+}
+.example-spacer{
+  flex: 1 1 auto;
+}
+.icon{
+  color: black;
+  width: 40px;
+  height: auto
+}

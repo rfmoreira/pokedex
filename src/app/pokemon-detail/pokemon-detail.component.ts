@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {PokemonService} from '../_service/pokemon.service';
 import {ActivatedRoute} from '@angular/router';
 
@@ -9,19 +9,26 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class PokemonDetailComponent implements OnInit {
 
-  pokemon = {};
+  pokemon: any;
+  pokemonTypes: any[] = [];
 
-  constructor(private pokemonService: PokemonService, private route: ActivatedRoute) { }
+  constructor(private pokemonService: PokemonService, private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     const name = this.route.snapshot.paramMap.get('name');
     this.getPokemonByName(name);
   }
 
-  getPokemonByName(name: string): void{
-    this.pokemonService.getPokemonByID(name).subscribe( res => {
+  getPokemonByName(name: string): void {
+    this.pokemonService.getPokemonByID(name).subscribe(res => {
       this.pokemon = res;
-      console.log(res);
+      console.log(this.pokemon);
+      // tslint:disable-next-line:prefer-for-of
+      for (let i = 0; i < this.pokemon.types.length; i++){
+        this.pokemonTypes.push(this.pokemon.types[i].type.name);
+      }
+      console.log(this.pokemonTypes);
     });
   }
 }
